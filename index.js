@@ -11,3 +11,13 @@ function minimum_of_two(first_number, second_number) {
  }
   return minimum;
 }
+
+function flip_a_coin() {
+  var result;
+  if (Math.random() < 0.5) {
+    result = 'heads';
+  } else {
+    result = 'tails';
+  }
+  return result;
+}
