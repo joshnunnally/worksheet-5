@@ -65,6 +65,48 @@ function yahtzee(result) {
 }
 yahtzee(print_5())
 
+function SumOfNumbers(list) {
+	var result;
+	result = 0;
+	for (var index = 0; index < list.length; index = index +1) {
+		result = result + list[index];
+	}
+	return result;
+	}
+SumOfNumbers([1,2,3,4]);
+
+function comparator(first, second) {
+  if (first === second) {
+    return 0;
+  } else {
+    if (first < second) {
+      return - 1;
+    } else {
+      return + 1;
+    }
+  }
+}
+function four_of_a_kind(list) {
+  list.sort(comparator);
+  if (list[0] === list[1]) {
+    if (list[0] === list[3]) {
+      return SumOfNumbers(list);
+    } else {
+      return 0;
+    }
+  }
+  if (list[1] === list[2]) {
+    if (list[1] === list[4])  {
+      return SumOfNumbers(list);
+    } else {
+      return 0;
+    }
+  }
+  return 0;
+}
+	
+
+
 
   
   
