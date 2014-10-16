@@ -174,7 +174,18 @@ function fullhouse(list) {
   }
   return 0;
 }
-function fullhouse()
+
+function game(list, functions) {
+  var result = [];
+  var index;
+  index = 0;
+  while (index < functions.length) {
+    result[index] = functions[index](list);
+    index = index + 1;
+  }
+  return result;
+}
+
 
 	
 
