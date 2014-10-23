@@ -199,6 +199,18 @@ result.sort(comparator);
 return result[result.length - 1];
 }
 
+function dice_rolls() {
+  var list_of_die_rolls;
+  var die_rolls;
+  die_rolls = 1;
+  list_of_die_rolls = print_5();
+  while (highscore(list_of_die_rolls) < 25) {
+    die_rolls = die_rolls + 1;
+    list_of_die_rolls = print_5();
+  }
+  return die_rolls;
+}
+dice_rolls();
 
 	
 
