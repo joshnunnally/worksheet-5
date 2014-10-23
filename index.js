@@ -22,7 +22,7 @@ function flip_a_coin() {
   return result;
 }
 
- function six_sided_dice()
+function six_sided_dice()
 {
   var number;
   number = Math.random() * 6;
@@ -191,6 +191,13 @@ function max(list) {
   return list[list.length - 1];
 }
 max([1,5,2]);
+
+function highscore(list){
+  var result;
+result = game(list,[yahtzee,large_straight,four_of_a_kind]);
+result.sort(comparator);
+return result[result.length - 1];
+}
 
 
 	
