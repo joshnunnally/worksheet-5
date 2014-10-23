@@ -186,6 +186,12 @@ function game(list, functions) {
   return result;
 }
 
+function max(list) {
+  list.sort(comparator);
+  return list[list.length - 1];
+}
+max([1,5,2]);
+
 
 	
 
